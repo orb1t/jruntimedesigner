@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<name>JRuntimeDesigner</name>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>jruntimedesigner</groupId>
+	<artifactId>jruntimedesigner</artifactId>
+	<version>1.0.0</version>
+	<description>Java Runtime Designer</description>
+	<organization>
+		<name>Igor Kunin</name>
+		<url>https://sourceforge.net/projects/jruntimedesigne/
+		</url>
+	</organization>
+	<developers>
+		<developer>
+			<id>ikunin</id>
+			<name>Igor Kunin</name>
+			<email>kunin.igor@gmail.com</email>
+			<url>http://www.kunin.de</url>
+			<organization>Igor Kunin</organization>
+			<organizationUrl>http://www.kunin.de
+			</organizationUrl>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>+2</timezone>
+			<properties>
+				<picUrl></picUrl>
+			</properties>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>Dominique Leszyk</name>
+			<email></email>
+			<url></url>
+			<organization></organization>
+			<organizationUrl></organizationUrl>
+			<roles>
+				<role>tester</role>
+			</roles>
+			<timezone>+2</timezone>
+			<properties>
+				<skype></skype>
+			</properties>
+		</contributor>
+	</contributors>
+	<!--
+		<issueManagement> <system>SourceForge</system>
+		<url>https://sourceforge.net/tracker/?group_id=237069&func=browse</url>
+		</issueManagement>
+	-->
+	<scm>
+		<connection>
+			scm:svn:https://jruntimedesigne.svn.sourceforge.net/svnroot/jruntimedesigne/trunk
+		</connection>
+		<developerConnection>
+			scm:svn:https://127.0.0.1/svn/my-projecthttps://jruntimedesigne.svn.sourceforge.net/svnroot/jruntimedesigne/trunk
+		</developerConnection>
+		<tag>HEAD</tag>
+		<url>
+			http://jruntimedesigne.svn.sourceforge.net/viewvc/jruntimedesigne/trunk/
+		</url>
+	</scm>
+	<distributionManagement>
+		<site>
+			<id>net.sourceforge.jruntimedesigner
+			</id>
+			<name>JRuntimeDesigner Website</name>
+			<url>
+				scp://shell.sourceforge.net//home/groups/j/jr/jruntimedesigne/htdocs/
+			</url>
+		</site>
+	</distributionManagement>
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<configuration>
+				</configuration>
+			</plugin>
+		</plugins>
+	</reporting>
+	<dependencies>
+		<dependency>
+			<groupId>org.tros</groupId>
+			<artifactId>l2fprod-properties-editor</artifactId>
+			<version>1.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fifesoft</groupId>
+			<artifactId>rsyntaxtextarea</artifactId>
+			<version>2.5.6</version>
+		</dependency>
+
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<descriptors>
+						<descriptor>src/main/assembly/binary-assembly.xml
+						</descriptor>
+					</descriptors>
+					<descriptorRefs>
+						<descriptorRef>src</descriptorRef>
+					</descriptorRefs>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout>
+    <Configuration showGrid="1" targetResHeight="395" targetResWidth="1252"/>
+    <Widget background="#ffff33" borderColor="" borderSize="0" clockwise="false"
+        fontName="MS Sans Serif" fontSize="48" fontStyle="1" foreground="#ff3333" hAlign="2"
+        height="78" id="" layer="0" locked="0" opaque="true"
+        text="Welcome to JRuntimeDesigner Demo :-)" type="JLabel" vAlign="0" vertical="false"
+        width="1015" x="68" y="17"/>
+</Layout>
